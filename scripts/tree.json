@@ -1,0 +1,4 @@
+{
+  "dirs": ["proj", "pyproj", "emptydir", "sub", "sub/proj2", "dirwithfile"],
+  "files": ["proj/setup.py", "pyproj/pyproject.toml", "sub/proj2/setup.py", "pkg-1.0.tar.gz", "x-1.0-py3-none-any.whl", "sub/y-2.0.zip"]
+}

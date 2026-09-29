@@ -1,0 +1,36 @@
+{
+  "name": "pip-reqtxt",
+  "version": "0.1.0",
+  "description": "Parser for pip requirements and constraints files that follows pip's own parse_requirements: line joining, comments, ${VAR}, options, hashes, editables, includes and error lines.",
+  "keywords": ["pip", "requirements.txt", "requirements", "constraints", "parser", "pep-508", "python", "packaging"],
+  "license": "MIT",
+  "author": "__AUTHOR__",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/__GH_OWNER__/pip-reqtxt.git"
+  },
+  "type": "module",
+  "engines": {
+    "node": ">=20.6.0"
+  },
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    }
+  },
+  "files": ["dist", "LICENSE-pip", "LICENSE-packaging"],
+  "scripts": {
+    "test": "node --test \"test/*.test.ts\"",
+    "typecheck": "tsc --noEmit",
+    "build": "rm -rf dist && tsc -p tsconfig.build.json",
+    "prepublishOnly": "npm run typecheck && npm test && npm run build && npm run test:dist",
+    "test:dist": "node --test test/smoke.mjs"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "typescript": "^5.7.0"
+  }
+}
