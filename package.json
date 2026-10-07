@@ -4,10 +4,10 @@
   "description": "Parser for pip requirements and constraints files that follows pip's own parse_requirements: line joining, comments, ${VAR}, options, hashes, editables, includes and error lines.",
   "keywords": ["pip", "requirements.txt", "requirements", "constraints", "parser", "pep-508", "python", "packaging"],
   "license": "MIT",
-  "author": "__AUTHOR__",
+  "author": "kofiadeyemiq",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/__GH_OWNER__/pip-reqtxt.git"
+    "url": "git+https://github.com/quietpelican42/pip-reqtxt.git"
   },
   "type": "module",
   "engines": {
